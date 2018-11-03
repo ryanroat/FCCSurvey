@@ -26,7 +26,19 @@
       </div>
       <div class="info-submit" id="info-number">
         <label id="number-label" for="number">Enter a number: </label>
-        <input type="number" name="number" id="number" placeholder="A Number" required>
+        <input type="number" name="number" id="number" placeholder="A Number" min="1" max="20" required>
+      </div>
+      <div class="info_submit" id="dropdown">
+        <p>Which is your favorite D&D die?</p>
+        <select name="die">
+          <option value="d4">d4</option>
+          <option value="d6">d6</option>
+          <option value="d8">d8</option>
+          <option value="d10">d10</option>
+          <option value="d%">d%</option>
+          <option value="d12">d12</option>
+          <option value="d20">d20</option>
+        </select>
       </div>
     </form>
   </main>
