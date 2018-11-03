@@ -28,7 +28,7 @@
         <label id="number-label" for="number">Enter a number: </label>
         <input type="number" name="number" id="number" placeholder="A Number" min="1" max="20" required>
       </div>
-      <div class="info_submit" id="dropdown">
+      <div class="info-submit" id="dropdown">
         <p>Which is your favorite D&D die?</p>
         <select name="die">
           <option value="d4">d4</option>
@@ -40,6 +40,43 @@
           <option value="d20">d20</option>
         </select>
       </div>
+      <fieldset>
+        <legend>Pick your favorite D&D race:</legend>
+        <div class="info-submit" id="races">
+          <div>
+            <input type="radio" name="race" id="dragonborn" value="dragonborn" />
+            <label for="dragonborn">dragonborn</label>
+          </div>
+          <div>
+            <input type="radio" name="race" id="dwarf" value="dwarf">
+            <label for="dwarf">dwarf</label>
+          </div>
+          <div>
+            <input type="radio" name="race" id="elf" value="elf">
+            <label for="elf">elf</label>
+          </div>
+          <div>
+            <input type="radio" name="race" id="gnome" value="gnome">
+            <label for="gnome">gnome</label>
+          </div>
+          <div>
+            <input type="radio" name="race" id="half-elf" value="half-elf">
+            <label for="half-elf">half-elf</label>
+          </div>
+          <div>
+            <input type="radio" name="race" id="halfling" value="halfling">
+            <label for="halfling">halfling</label>
+          </div>
+          <div>
+            <input type="radio" name="race" id="human" value="human">
+            <label for="human">human</label>
+          </div>
+          <div>
+            <input type="radio" name="race" id="tabaxi" value="tabaxi">
+            <label for="tabaxi">tabaxi</label>
+          </div>
+        </div>
+      </fieldset>
     </form>
   </main>
 </body>
