@@ -1,84 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>FCC Survey Project</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles.css">
-  <title>FCC Survey Project</title>
-</head>
-
-<body>
-  <header>
-    <h1 id="title">FCC Survey Project</h1>
-    <p id="description">This is a sample survey form project. Submit some info, please.</p>
-  </header>
-  <main>
-    <form action="" id="survey-form">
-      <div class="info-submit" id="info-name">
-        <label id="name-label" for="name">Enter your name: </label>
-        <input type="text" name="name" id="name" placeholder="Your Name" required>
-      </div>
-      <div class="info-submit" id="info-email">
-        <label id="email-label" for="email">Enter your email: </label>
-        <input type="email" name="email" id="email" placeholder="Your Email" required>
-      </div>
-      <div class="info-submit" id="info-number">
-        <label id="number-label" for="number">Enter a number: </label>
-        <input type="number" name="number" id="number" placeholder="A Number" min="1" max="20" required>
-      </div>
-      <div class="info-submit" id="dropdown">
-        <p>Which is your favorite D&D die?</p>
-        <select name="die">
-          <option value="d4">d4</option>
-          <option value="d6">d6</option>
-          <option value="d8">d8</option>
-          <option value="d10">d10</option>
-          <option value="d%">d%</option>
-          <option value="d12">d12</option>
-          <option value="d20">d20</option>
-        </select>
-      </div>
-      <fieldset>
-        <legend>Pick your favorite D&D race:</legend>
-        <div class="info-submit" id="races">
-          <div>
-            <input type="radio" name="race" id="dragonborn" value="dragonborn" />
-            <label for="dragonborn">dragonborn</label>
-          </div>
-          <div>
-            <input type="radio" name="race" id="dwarf" value="dwarf">
-            <label for="dwarf">dwarf</label>
-          </div>
-          <div>
-            <input type="radio" name="race" id="elf" value="elf">
-            <label for="elf">elf</label>
-          </div>
-          <div>
-            <input type="radio" name="race" id="gnome" value="gnome">
-            <label for="gnome">gnome</label>
-          </div>
-          <div>
-            <input type="radio" name="race" id="half-elf" value="half-elf">
-            <label for="half-elf">half-elf</label>
-          </div>
-          <div>
-            <input type="radio" name="race" id="halfling" value="halfling">
-            <label for="halfling">halfling</label>
-          </div>
-          <div>
-            <input type="radio" name="race" id="human" value="human">
-            <label for="human">human</label>
-          </div>
-          <div>
-            <input type="radio" name="race" id="tabaxi" value="tabaxi">
-            <label for="tabaxi">tabaxi</label>
-          </div>
+  <body>
+    <header>
+      <h1 id="title">FCC Survey Project</h1>
+      <p id="description">
+        This is a sample survey form project. Submit some info, please.
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <div class="info-submit" id="info-name">
+          <label id="name-label" for="name">Enter your name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
         </div>
-      </fieldset>
-    </form>
-  </main>
-</body>
+        <div class="info-submit" id="info-email">
+          <label id="email-label" for="email">Enter your email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="info-submit" id="info-number">
+          <label id="number-label" for="number">Enter a number: </label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="A Number"
+            min="1"
+            max="20"
+            required
+          />
+        </div>
+        <div class="info-submit" id="dropdown">
+          <p>Which is your favorite D&D die?</p>
+          <select name="die">
+            <option value="d4">d4</option>
+            <option value="d6">d6</option>
+            <option value="d8">d8</option>
+            <option value="d10">d10</option>
+            <option value="d%">d%</option>
+            <option value="d12">d12</option>
+            <option value="d20">d20</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Pick your favorite D&D race:</legend>
+          <div class="info-submit" id="races">
+            <div>
+              <input
+                type="radio"
+                name="race"
+                id="dragonborn"
+                value="dragonborn"
+              />
+              <label for="dragonborn">dragonborn</label>
+            </div>
+            <div>
+              <input type="radio" name="race" id="dwarf" value="dwarf" />
+              <label for="dwarf">dwarf</label>
+            </div>
+            <div>
+              <input type="radio" name="race" id="elf" value="elf" />
+              <label for="elf">elf</label>
+            </div>
+            <div>
+              <input type="radio" name="race" id="gnome" value="gnome" />
+              <label for="gnome">gnome</label>
+            </div>
+            <div>
+              <input type="radio" name="race" id="half-elf" value="half-elf" />
+              <label for="half-elf">half-elf</label>
+            </div>
+            <div>
+              <input type="radio" name="race" id="halfling" value="halfling" />
+              <label for="halfling">halfling</label>
+            </div>
+            <div>
+              <input type="radio" name="race" id="human" value="human" />
+              <label for="human">human</label>
+            </div>
+            <div>
+              <input type="radio" name="race" id="tabaxi" value="tabaxi" />
+              <label for="tabaxi">tabaxi</label>
+            </div>
+          </div>
+        </fieldset>
 
+        <fieldset>
+          <legend>What class(es) will you pick for your D&D character?</legend>
+          <div>
+            <input type="checkbox" name="Barbarian" value="Barbarian" id="" />
+            <label for="Barbarian">Barbarian</label>
+          </div>
+          </div>
+            <input type="checkbox" name="Bard" value="Bard" />
+            <label for="Bard">Bard</label>
+          <div>
+          <div>
+            <input type="checkbox" name="Cleric" value="Cleric" id="">
+            <label for="Cleric">Cleric</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Druid" value="Druid" id="">
+            <label for="Druid">Druid</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Fighter" value="Fighter" id="">
+            <label for="Fighter">Fighter</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Monk" value="Monk" id="">
+            <label for="Monk">Monk</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Paladin" value="Paladin" id="">
+            <label for="Paladin">Paladin</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Ranger" value="Ranger" id="">
+            <label for="Ranger">Ranger</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Rogue" value="Rogue" id="">
+            <label for="Rogue">Rogue</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Sorcerer" value="Sorcerer" id="">
+            <label for="Sorcerer">Sorcerer</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Warlock" value="Warlock" id="">
+            <label for="Warlock">Warlock</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Wizard" value="Wizard" id="">
+            <label for="Wizard">Wizard</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="description">Please describe your D&D character:</label>
+          <br>
+          <textarea name="description" id="description" cols="30" rows="10">
+            My character...
+          </textarea>
+        </div>
+        <div>
+          <input type="button" value="Send us your info..." id="submit">
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
