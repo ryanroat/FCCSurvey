@@ -16,4 +16,5 @@ input,select{vertical-align:middle}
 
 body {
   background: linear-gradient(35deg, #ccffff, #ffcccc);
+  padding: 1rem 25%;
 }
